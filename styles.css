@@ -17,6 +17,7 @@ h1{
     height: 60px;
     width: 150px;
     border-radius: 10px;
+    border
  }
 
 .container{
@@ -25,4 +26,41 @@ h1{
     height: 500px;
     margin: 10px;
     align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.initialSize{
+border: 0.5px solid black;
+min-width: 29.25px;
+height:29.25px;
+}
+
+.size16{
+    border: 0.5px solid black;
+min-width: 29.25px;
+height:29.25px;
+}
+
+.size20{
+    border: 0.5px solid black;
+min-width: 23px;
+height:23px;
+}
+
+.size25{
+    border: 0.5px solid black;
+min-width: 18px;
+height:18px;
+}
+
+.size30{
+    border: 0.5px solid black;
+min-width: 14.667px;
+height:14.66666666666667px;
+}
+
+.black{
+    background-color: black;
 }
