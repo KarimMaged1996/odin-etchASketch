@@ -3,6 +3,7 @@ const btn16=document.querySelector('.sixteen');
 const btn20=document.querySelector('.twenty');
 const btn25=document.querySelector('.twentyFive');
 const btn30=document.querySelector('.thirty');
+const btnErase=document.querySelector('.erase')
 const container=document.querySelector('.container');
 let size;
 let divs=[];
@@ -82,3 +83,9 @@ btn20.addEventListener('click',fireTheEvent);
 btn25.addEventListener('click',fireTheEvent);
 btn30.addEventListener('click',fireTheEvent);
 
+function erase(){
+    for(i=0;i<divs.length;i++){
+       divs[i].classList.remove('black');
+    }
+        }
+btnErase.addEventListener('click',erase);
