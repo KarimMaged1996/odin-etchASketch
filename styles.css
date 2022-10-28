@@ -22,7 +22,7 @@ h1{
 .container{
     border:2px  solid black;
     width: 500px;
-    height: 500px;
+    min-height: 500px;
     margin: 10px;
     align-self: center;
     display: flex;
@@ -32,32 +32,37 @@ h1{
 
 .initialSize{
 border: 0.5px solid black;
-min-width: 29.25px;
-height:29.25px;
+box-sizing: border-box;
+min-width: 31.25px;
+height:31.25px;
 }
 
 .size16{
     border: 0.5px solid black;
-min-width: 29.25px;
-height:29.25px;
+    box-sizing: border-box;
+min-width: 31.25px;
+height:31.25px;
 }
 
 .size20{
     border: 0.5px solid black;
-min-width: 23px;
-height:23px;
+    box-sizing: border-box;
+min-width: 25px;
+height:25px;
 }
 
 .size25{
     border: 0.5px solid black;
-min-width: 18px;
-height:18px;
+    box-sizing: border-box;
+min-width: 20px;
+height:20px;
 }
 
-.size30{
+.size40{
     border: 0.5px solid black;
-min-width: 14.67px;
-height:14.67px%;
+    box-sizing: border-box;
+width: 12.5px;
+height:12.5px;
 }
 
 .black{

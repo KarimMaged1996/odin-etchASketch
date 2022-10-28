@@ -2,7 +2,7 @@
 const btn16=document.querySelector('.sixteen');
 const btn20=document.querySelector('.twenty');
 const btn25=document.querySelector('.twentyFive');
-const btn30=document.querySelector('.thirty');
+const btn40=document.querySelector('.fourty');
 const btnErase=document.querySelector('.erase')
 const container=document.querySelector('.container');
 let size;
@@ -43,12 +43,12 @@ function getSize(){
             container.appendChild(divs[i]);
         }
     } 
-    else if (size===30){
+    else if (size===40){
         container.innerHTML='';
-        for (let i=0; i<(30**2); i++){
+        for (let i=0; i<(40**2); i++){
             divs[i]=document.createElement('div');
             divs.forEach((elem)=>elem.removeAttribute('class'));
-            divs.forEach((elem)=>elem.classList.add('size30'));
+            divs.forEach((elem)=>elem.classList.add('size40'));
             container.appendChild(divs[i]);
         }
     } 
@@ -57,13 +57,13 @@ function getSize(){
 btn16.addEventListener('click',()=>{size=16});
 btn20.addEventListener('click',()=>{size=20});
 btn25.addEventListener('click',()=>{size=25});
-btn30.addEventListener('click',()=>{size=30});
+btn40.addEventListener('click',()=>{size=40});
 
 //events to change the size when the button is clicked
 btn16.addEventListener('click',getSize);
 btn20.addEventListener('click',getSize);
 btn25.addEventListener('click',getSize);
-btn30.addEventListener('click',getSize);
+btn40.addEventListener('click',getSize);
 
 //event to make the hovering functionality for the initial case
 container.childNodes.forEach((elem)=>{
@@ -84,7 +84,7 @@ container.childNodes.forEach((elem)=>{
 btn16.addEventListener('click',fireTheEvent);
 btn20.addEventListener('click',fireTheEvent);
 btn25.addEventListener('click',fireTheEvent);
-btn30.addEventListener('click',fireTheEvent);
+btn40.addEventListener('click',fireTheEvent);
 
 //function and event for the erase button
 function erase(){
