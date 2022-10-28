@@ -69,6 +69,7 @@ btn40.addEventListener('click',getSize);
 //event to make the hovering functionality for the initial case
 container.childNodes.forEach((elem)=>{
     elem.addEventListener('mouseover',function(){
+        elem.classList.remove('white');
         elem.classList.add('black');
     })
 })
@@ -78,6 +79,7 @@ container.childNodes.forEach((elem)=>{
 function fireTheEvent(){
 container.childNodes.forEach((elem)=>{
     elem.addEventListener('mouseover',function(){
+        elem.classList.remove('white');
         elem.classList.add('black');
     })
 })}
@@ -90,7 +92,7 @@ btn40.addEventListener('click',fireTheEvent);
 //function and event for the erase button
 function erase(){
     for(i=0;i<divs.length;i++){
-       divs[i].classList.remove('black');
+       divs[i].classList.add('white');
     }
         }
 btnErase.addEventListener('click',erase);
