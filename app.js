@@ -5,6 +5,7 @@ const btn25=document.querySelector('.twentyFive');
 const btn40=document.querySelector('.fourty');
 const btnErase=document.querySelector('.erase')
 const container=document.querySelector('.container');
+const colorful=document.querySelector('.colorful');
 let size;
 let divs=[];
 // for loop to the the initial size with 16
@@ -93,3 +94,14 @@ function erase(){
     }
         }
 btnErase.addEventListener('click',erase);
+
+//function and event for the colorful button
+function makeColors(){
+    container.childNodes.forEach((elem)=>{
+        elem.addEventListener('mouseover',function(){
+            let colors=['red','green','blue','purple','yellow','orange']
+            elem.classList.add(colors[Math.round((Math.random()*6))]);
+    })
+    })}
+
+    colorful.addEventListener('click',makeColors);
